@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+            <h1 class="todo">TODO</h1>
+        <div class="box">
+            <h1 class="dateInToday"></h1>
+            <form class="add">
+                <input type="text" class="add_input" placeholder="Add a task" name="inpAdd">
+                <button type="submit" class="add_btn">Add</button>
+            </form>
+            <div class="btn_r_s">
+                <button class="remove">Remove Duplicat</button>
+                <button class="sort">Sort</button>
+            </div>
+            
+            <div class="box-list">
+                <table>
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-body">
+            <div class="modal-content_in">
+                <div class="modal-header">
+                    <h2>Edit Card</h2>
+                    <button class="close" onclick="return closeBtn()">X</button>
+                </div>
+                <div class="modal-main">
+                    <form class="form2">
+                        <div class="form-box">
+                            <input type="text" class="name" name="text">
+                            <label>Name</label>
+                        </div>
+                        <button class="submit">Edit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
